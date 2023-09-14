@@ -1,10 +1,12 @@
+import Navbar from '@/presentation/components/shared/navbar.component'
+import CartSheet from '@/presentation/components/sheet/cart.sheet'
+import WishlistSheet from '@/presentation/components/sheet/wishlist.sheet'
 import { Button } from '@/presentation/components/ui/button'
-import Image from 'next/image'
 
 export default function Home() {
   return (
     <main>
-      <Button >click me</Button>
+      <Navbar />
     </main>
   )
 }

@@ -11,6 +11,6 @@
   },
   "aliases": {
     "components": "@/presentation/components",
-    "utils": "@/presentation/lib/utils.ts"
+    "utils": "@/presentation/lib/utils"
   }
 }
