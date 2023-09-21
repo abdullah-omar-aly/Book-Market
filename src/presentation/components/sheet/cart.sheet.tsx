@@ -10,6 +10,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/presentation/components/ui/sheet"
+import Image from 'next/image'
 
 const CartComponent = () => {
     <div className=' bg-dark-gray w-full h-screen text-white px-4 flex flex-col '>
@@ -82,6 +83,23 @@ function CartContent() {
             <SheetDescription>
                 Your cart is currently empty
             </SheetDescription>
+            <div>
+                <div>
+                    <div>
+                        <Image 
+                        
+                        src='https://cdn.aseeralkotb.com/storage/media/320208/conversions/%D8%A3%D9%86%D8%AA%D9%8A%D8%AE%D8%B1%D9%8A%D8%B3%D8%AA%D9%88%D8%B3-125-200x300-webp.webp' 
+                        alt='book cover'
+                        width={30}
+                        height={60} 
+                        />
+                    </div>
+                    <div>
+                        <h5>Prisoner of zenda</h5>
+                        <p>75 $</p>
+                    </div>
+                </div>
+            </div>
         </SheetHeader>
     )
 }
@@ -91,7 +109,7 @@ function CartSheet() {
         <>
             <div className='md:hidden'>
                 <Sheet>
-                    <SheetTrigger>
+                    <SheetTrigger className='grid place-content-center'>
                         <FontAwesomeIcon
                             width={20}
                             height={20}
@@ -108,7 +126,7 @@ function CartSheet() {
             </div>
             <div className='hidden md:block'>
                 <Sheet>
-                    <SheetTrigger>
+                    <SheetTrigger className='grid place-content-center'>
                         <FontAwesomeIcon
                             width={20}
                             height={20}

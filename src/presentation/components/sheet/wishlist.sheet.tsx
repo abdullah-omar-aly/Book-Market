@@ -31,7 +31,7 @@ function WishlistSheet() {
         <>
             <div className='md:hidden'>
                 <Sheet>
-                    <SheetTrigger>
+                    <SheetTrigger className='grid place-content-center'>
                         <FontAwesomeIcon
                             width={20}
                             height={20}
@@ -49,7 +49,7 @@ function WishlistSheet() {
             </div>
             <div className='hidden md:block'>
                 <Sheet>
-                    <SheetTrigger>
+                    <SheetTrigger className='grid place-content-center'>
                         <FontAwesomeIcon
                             width={20}
                             height={20}
