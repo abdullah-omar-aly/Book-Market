@@ -1,15 +1,19 @@
-// prisma.js
-import { PrismaClient } from '@prisma/client';
+// // prisma.js
+// import { PrismaClient } from '@prisma/client';
 
-let prismaClient: any
+import { PrismaClient } from "@prisma/client";
 
-if (process.env.NODE_ENV === 'production') {
-  prismaClient = new PrismaClient();
-} else {
-  if (!global.prismaClient) {
-    global.prismaClient = new PrismaClient();
-  }
-  prismaClient = global.prismaClient;
-}
+// let prismaClient: any
 
-export default prismaClient;
+// if (process.env.NODE_ENV === 'production') {
+//   prismaClient = new PrismaClient();
+// } else {
+//   if (!global.prismaClient) {
+//     global.prismaClient = new PrismaClient();
+//   }
+//   prismaClient = global.prismaClient;
+// }
+
+// export default prismaClient;
+
+export const prismaClient = new PrismaClient()
