@@ -1,14 +1,24 @@
 "use client"
-import React from 'react'
-import store from '@/presentation/store/root.store'
-import { Provider } from "react-redux";
+
+import React, { useEffect } from 'react'
+import { SessionProvider } from 'next-auth/react'
 
 function ContextProvider({ children }: { children: React.ReactNode }) {
-    return (
-        <Provider store={store}>
+    useEffect(() => {
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/service-worker.js").then((registration) => {
+                console.log("Service Worker registered with scope:", registration.scope);
+            }).catch((error) => {
+                console.error("Service Worker registration failed:", error);
+            });
+        }
+    }, [])
 
+    return (
+        <SessionProvider>
             {children}
-        </Provider>
+        </SessionProvider>
+
 
     )
 }
