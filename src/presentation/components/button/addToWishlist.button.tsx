@@ -1,12 +1,17 @@
 "use client"
 import React from 'react'
-import { Button } from '../ui/button'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function AddToWishlistButton() {
   return (
-    <Button >
-        Add to wishlist
-    </Button>
+    <button>
+      <FontAwesomeIcon
+        icon={faHeart}
+        className='text-primary text-xl'
+      />
+    </button>
   )
 }
 

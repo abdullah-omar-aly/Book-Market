@@ -12,7 +12,7 @@ async function Navbar() {
     console.log('session', session)
 
     return (
-        <div className='container sticky top-0 bg-white z-10 h-16 border flex justify-between items-center '>
+        <div className='container sticky top-0 bg-white z-10 h-16 border-b flex justify-between items-center '>
             <h1 className='font-bold text-lg text-primary'>Book Market</h1>
             <div className='flex gap-3 items-center'>
                 <WishlistSheet />
