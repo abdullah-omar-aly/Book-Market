@@ -30,7 +30,7 @@ async function HomePage() {
 
                     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                         {products.map((product) => (
-                            <Link href={`/products/${product.id}`} key={product.id} className="group relative block" >
+                            <Link href={`/books/${product.id}`} key={product.id} className="group relative block" >
                                 <BookCard product={product} />
                             </Link>
                         ))}

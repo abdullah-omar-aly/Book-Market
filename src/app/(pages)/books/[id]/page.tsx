@@ -5,7 +5,7 @@ import Navbar from '@/presentation/components/shared/navbar.component'
 import AddToCartButton from '@/presentation/components/button/addToCart.button'
 
 
-async function ProductDetailsPage({ params }: { params: { id: string } }) {
+async function BookDetailsPage({ params }: { params: { id: string } }) {
   const bookDetails = await prismaClient.book.findUnique({
     where: {
       id: params.id
@@ -38,4 +38,4 @@ async function ProductDetailsPage({ params }: { params: { id: string } }) {
   )
 }
 
-export default ProductDetailsPage
+export default BookDetailsPage
