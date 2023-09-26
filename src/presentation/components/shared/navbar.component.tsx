@@ -13,7 +13,7 @@ async function Navbar() {
 
     return (
         <div className='container sticky top-0 bg-white z-10 h-16 border flex justify-between items-center '>
-            <h1 className='font-bold text-lg text-primary'>Abdullah Omar</h1>
+            <h1 className='font-bold text-lg text-primary'>Book Market</h1>
             <div className='flex gap-3 items-center'>
                 <WishlistSheet />
                 <CartSheet />
